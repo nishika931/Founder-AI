@@ -28,14 +28,7 @@ def register_user(db, user):
 
 
 def login_user(db, user):
-    print("Email:", user.email)
-    print("Password length:", len(user.password))
-    print("Password:", user.password)
-
     old_user = db.query(User).filter(User.email == user.email).first()
-    if old_user:
-        print("Stored password hash:", old_user.password)
-        print("Hash length:", len(old_user.password))
 
 
     if not old_user:
