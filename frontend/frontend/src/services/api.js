@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://founder-ai-duio.onrender.com"
+    baseURL: "https://founder-ai-6e6u.onrender.com"
 });
 
 export default api;
