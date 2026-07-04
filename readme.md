@@ -242,13 +242,21 @@ History Page
 
 
 - Login Page
-![alt text](ScreenShots/Login.png)
+![Login](ScreenShots/Login.png)
 - Register Page
-
+![Register](ScreenShots/Register.png)
 - Dashboard
+![Dashboard](ScreenShots/Dashboard.png)
 - AI Report
+![AI Report 1](ScreenShots/Reports.png) 
+![AI Report 2](ScreenShots/Report2.png)
 - History Page
+![History](ScreenShots/History.png) 
+![View History](ScreenShots/View.png)
 - Mobile View
+![Mobile View 1](ScreenShots/MobileView1.png)
+![Mobile View 2](ScreenShots/MobileView2.png)
+![Mobile View 3](ScreenShots/MobileView3.png)
 
 ---
 
