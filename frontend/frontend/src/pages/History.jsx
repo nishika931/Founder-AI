@@ -279,6 +279,7 @@ function History() {
         )}
 
       </main>
+      </div>
 
  
 
