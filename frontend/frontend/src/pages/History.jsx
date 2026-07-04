@@ -86,7 +86,7 @@ function History() {
     <div className="min-h-screen bg-gray-100">
       <MobileNavbar />
 
-      <div className="flex"></div>
+      <div className="flex">
 
       <Sidebar />
 
