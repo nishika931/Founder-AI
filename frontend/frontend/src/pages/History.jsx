@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/SideBar";
 import MobileNavbar from "../components/MobileNavbar";
 import api from "../services/api";
 import { Eye, Trash2 } from "lucide-react";
