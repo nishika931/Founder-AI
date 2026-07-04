@@ -10,7 +10,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 Base.metadata.create_all(bind=engine)
 
-
 app = FastAPI(
     title="Startup_AI",
     version="1.0.0"
