@@ -260,7 +260,7 @@ History Page
 
 ---
 
-🌐 Live Demo: https://lnkd.in/g7wvmEts
+🌐 Live Demo: https://founder-ai-mu.vercel.app/
 
 # 👩‍💻 Author
 
