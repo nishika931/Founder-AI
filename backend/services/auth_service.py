@@ -30,7 +30,6 @@ def register_user(db, user):
 def login_user(db, user):
     old_user = db.query(User).filter(User.email == user.email).first()
 
-
     if not old_user:
         
         return None
