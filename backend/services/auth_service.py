@@ -31,10 +31,10 @@ def login_user(db, user):
     old_user = db.query(User).filter(User.email == user.email).first()
 
     if not old_user:
-        
-        return None
+        return "EMAIL_NOT_FOUND"
 
     if not verify_password(user.password, old_user.password):
-        return None
+        return "PASSWORD_WRONG"
 
     return old_user
+

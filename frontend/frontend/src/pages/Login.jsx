@@ -46,12 +46,13 @@ function Login() {
       }, 1000);
 
     } catch (err) {
-      setError(
-        err.response?.data?.detail || "Invalid Email or Password"
-      );
-    } finally {
-      setLoading(false);
-    }
+
+  if (err.response) {
+    setError(err.response.data.detail);
+  } else {
+    setError(err.message);
+  }
+}
   };
 
   return (

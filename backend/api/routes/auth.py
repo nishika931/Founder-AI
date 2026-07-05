@@ -36,19 +36,26 @@ def register(user: UserRegister, db: Session = Depends(get_db)):
 @router.post("/login")
 def login(user: UserLogin, db: Session = Depends(get_db)):
 
-    old_user = login_user(db, user)
+    result = login_user(db, user)
 
-    if old_user is None:
+    if result == "EMAIL_NOT_FOUND":
         raise HTTPException(
             status_code=401,
-            detail="Invalid Email or Password"
+            detail="Email not found"
+        )
+
+    if result == "PASSWORD_WRONG":
+        raise HTTPException(
+            status_code=401,
+            detail="Password is incorrect"
         )
 
     return {
         "message": "Login Successful",
         "user": {
-            "id": old_user.id,
-            "name": old_user.name,
-            "email": old_user.email
+            "id": result.id,
+            "name": result.name,
+            "email": result.email
         }
     }
+
